@@ -9,4 +9,9 @@ lablk or sudo fdisk -l
 ```
 sudoo dd if=/dev/sdx of=/path/to/backup.iso bs=4M status=progress
 ```
-## Step3
+## Step3: Verify 
+```
+>> sudo dd if = /dev/sdx bs = 4M | md5sum
+>> md5sum /path/to/backup.iso
+```
+if both checksum are qual then card is clone perfect
